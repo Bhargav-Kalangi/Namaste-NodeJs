@@ -7,3 +7,11 @@ Namaste-NodeJS
 - inserted data using UI
 - inserted data using code
 - Done CRUD operations
+  
+
+
+
+- initialised the project using npm init
+- express installed
+- new express server created
+- nodemon installed 
