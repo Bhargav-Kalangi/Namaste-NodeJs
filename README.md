@@ -16,3 +16,4 @@ Namaste-NodeJS
 - new express server created
 - nodemon installed 
 - Order does matter in Node js while routing
+- String patterns doesn't work on express 5
