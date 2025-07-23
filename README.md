@@ -15,3 +15,4 @@ Namaste-NodeJS
 - express installed
 - new express server created
 - nodemon installed 
+- Order does matter in Node js while routing
