@@ -36,12 +36,21 @@ const { adminAuth, userAuth } = require("./middlewares/adminAuth");
 //   }
 // );
 
-app.use("/admin", adminAuth);
+// app.use("/admin", adminAuth);
+// app.get("/admin/getAllData", (req, res) => {
+//   console.log("request recieved to /admin/getAllData");
+//   res.send("All Data sent");
+// });
+// app.get("/admin/deleteUserData", userAuth);
 app.get("/admin/getAllData", (req, res) => {
-  console.log("request recieved to /admin/getAllData");
-  res.send("All Data sent");
+  try {
+    throw new Error("BROKEN");
+    res.send("UserData");
+  } catch (err) {
+    res.status(500).send("something went wrong...");
+  }
 });
-app.get("/admin/deleteUserData", userAuth);
+
 app.listen(port, () => {
   console.log("console.log will be printed only it is connected to server");
 });
